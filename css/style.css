@@ -1,0 +1,81 @@
+:root {
+    --maincolor: #17A2B8;
+    --main-backgroun: #24353F;
+    --white-text-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--main-backgroun);
+}
+
+.login,
+.header-special {
+    box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+
+h1 {
+    color: var(--maincolor);
+    font-size: 2rem;
+}
+input {
+    background-color: var(--main-backgroun) !important;
+}
+input::placeholder {
+    
+    color: #ffffff !important;
+}
+.form-control:focus{
+    box-shadow: unset;
+}
+button {
+    color: #ffffff !important;
+}
+
+
+
+
+@media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+.btn-spicail {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #24353F;
+    --bs-btn-border-color: rgb(23, 162, 184);
+    --bs-btn-hover-color: rgb(23, 162, 184);
+    --bs-btn-hover-bg: rgb(23, 162, 184);
+    --bs-btn-hover-border-color: rgb(23, 162, 184);
+}
+a.sign {
+    text-decoration: none;
+}
+a.sign:hover {
+    text-decoration: underline;
+}
+
+.form-control {
+    color: #fff !important;
+}
+.success {
+    color: green;
+  }
